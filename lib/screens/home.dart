@@ -189,13 +189,13 @@ class _HomeScreenState extends State<HomeScreen> {
         "name": "Hamburger",
         "category": "Fast food ",
         "price": "\$6.99",
-        "image": "assets/images/Humburger.png",
+        "image": "assets/images/Hamburger.png",
       },
       {
         "name": "Mix Rice",
         "category": "Fast food ",
         "price": "\$5.99",
-        "image": "assets/images/Mix Rice.png",
+        "image": "assets/images/Mix Rice (2).png",
       },
       {
         "name": "Prawn Mix Salad",
@@ -238,7 +238,8 @@ class _HomeScreenState extends State<HomeScreen> {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const FoodDetails()),
+              MaterialPageRoute(
+                  builder: (context) => FoodDetails(foodData: item)),
             );
           },
           child: Stack(
@@ -337,13 +338,13 @@ class _HomeScreenState extends State<HomeScreen> {
         "name": "Prawn mix Rice",
         "category": "Rice",
         "price": "\$5.99",
-        "image": "assets/images/Mix Rice.png",
+        "image": "assets/images/Mix Rice (2).png",
       },
       {
         "name": "Burger",
         "category": "Fast food",
         "price": "\$6.99",
-        "image": "assets/images/Humburger.png",
+        "image": "assets/images/Hamburger.png",
       },
       {
         "name": "Sandwich",
@@ -364,7 +365,8 @@ class _HomeScreenState extends State<HomeScreen> {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const FoodDetails()),
+                MaterialPageRoute(builder: (context) =>
+                    FoodDetails(foodData: popularItems[index])),
               );
             },
             child: Container(
