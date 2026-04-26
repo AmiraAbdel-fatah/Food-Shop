@@ -29,7 +29,11 @@ class _FoodDetailsState extends State<FoodDetails> {
           onTap: () => Navigator.pop(context),
           child: Padding(
             padding: EdgeInsets.only(left: 20.w),
-            child: Icon(Icons.menu, color: Colors.black, size: 28.sp),
+            child: Image.asset(
+              "assets/icons/menus 1.png",
+              width: 24.w,
+              height: 24.h,
+            ),
           ),
         ),
         centerTitle: true,

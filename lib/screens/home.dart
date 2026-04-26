@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
             _buildPopularHeader(),
             SizedBox(height: 15.h),
             _buildPopularItems(),
-            SizedBox(height: 120.h), // Space for bottom nav
+            SizedBox(height: 120.h),
           ],
         ),
       ),
@@ -449,7 +449,7 @@ class _HomeScreenState extends State<HomeScreen> {
           int visualIndex = items.indexWhere(
             (item) => item['index'] == _currentIndex,
           );
-          if (visualIndex == -1) visualIndex = 2; // Default to center
+          if (visualIndex == -1) visualIndex = 2;
 
           double itemWidth = constraints.maxWidth / 5;
           double centerX = itemWidth * visualIndex + (itemWidth / 2);
@@ -471,7 +471,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           setState(() => _currentIndex = item['index']),
                       child: Container(
                         height: 70.h,
-                        color: Colors.transparent, // Better hit testing
+                        color: Colors.transparent,
                         child: Stack(
                           alignment: Alignment.center,
                           clipBehavior: Clip.none,
